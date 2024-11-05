@@ -17,9 +17,9 @@ import {
     useColorModeValue,
 } from '@chakra-ui/react';
 //Not an actual Hamburger...
-import { HamburgerIcon } from '@chakra-ui/icons';
+// import { HamburgerIcon } from '@chakra-ui/icons';
 import Logo from './logo';
-import { Slant as Hamburger } from 'hamburger-react';
+// import { Slant as Hamburger } from 'hamburger-react';
 import React, { useState } from 'react';
 
 function LinkWithAnimation({ href, color, children }) {
@@ -45,7 +45,7 @@ function LinkWithAnimation({ href, color, children }) {
       left: 0,
       width: isHovered ? '100%' : '0%',
       height: '2px',
-      background: '#5F967C',
+      background: '#2584b8',
       transition: 'width 0.3s ease-in-out'
     }
   
@@ -61,4 +61,49 @@ function LinkWithAnimation({ href, color, children }) {
         </Box>
       </NextLink>
     )
-  }
+}
+
+const Navbar = props => {
+    return (
+        //All the horizontal buttons on the navbar
+        <Box 
+            position="fixed"
+            as="nav"
+            w="100%"
+            zIndex={2}
+            css={{ backdropFilter: 'blur(10px)' }}
+            {...props}
+        >
+            <Container display='flex' p={2} wrap="wrap">
+            <Logo />
+                <Stack
+                direction={{ base: 'column', md: 'row' }}
+                display={{ base: 'none', md: 'flex' }}
+                width={{ base: 'full', md: 'auto' }}
+                alignItems="center"
+                flexGrow={1}
+                mt={{ base: 4, md: 0 }}
+                justifyContent="flex-end"
+                paddingLeft="120pt"
+                >
+                    <LinkWithAnimation href="/projects" color="black">
+                        Projects
+                    </LinkWithAnimation>
+
+                    <LinkWithAnimation href="/blog" color="black">
+                        Blog
+                    </LinkWithAnimation>
+
+                    <LinkWithAnimation
+                        href="https://drive.google.com/file/d/1G5UZW5CRzUkG03fkYUVnMNceDX4O8GFy/view?usp=sharing"
+                        color="black"
+                    >
+                    Resume
+                    </LinkWithAnimation>
+                </Stack>
+            </Container>
+        </Box>
+    )
+}
+
+export default Navbar;

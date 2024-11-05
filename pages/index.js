@@ -20,7 +20,7 @@ const Page = () => {
               color={'black'}
               textDecoration={'underline'}
               textUnderlineOffset={'4px'}
-              textDecorationColor={'#5F967C'}
+              textDecorationColor={'#2584b8'}
               textDecorationThickness={'4px'}
             >
               Pablo Ramos

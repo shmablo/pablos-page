@@ -31,7 +31,7 @@ function AnimatedLink({ href, color, children}) {
       left: 0,
       width: isHovered ? '100%' : '0%',
       height: '2px',
-      background: '#5F967C',
+      background: '#2584b8',
       transition: 'width 0.3s ease-in-out'
     }
   
@@ -61,3 +61,5 @@ const Logo = () => {
         </HStack>
     )
 }
+
+export default Logo;
