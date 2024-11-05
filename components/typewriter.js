@@ -1,5 +1,7 @@
+//New Dependencies
 import GraphemeSplitter from 'grapheme-splitter'
 import Typewriter from 'typewriter-effect'
+
 import { Box } from '@chakra-ui/react'
 import React from 'react'
 

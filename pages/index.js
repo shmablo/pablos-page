@@ -4,16 +4,22 @@ import { Container,
         Image,
         SimpleGrid
 } from "@chakra-ui/react"
+import React from "react"
+import dynamic from "next/dynamic"
 
 import Layout from "../components/layouts/article"
 import Paragraph from "../components/paragraph"
 import Section from "../components/section"
 
+const DynamicTypeWriter = dynamic(() => import("../components/typewriter"), {
+  ssr: false,
+})
 
 const Page = () => {
   return (
     <Layout>
       <Container bg="white" paddingTop="15px">
+        <DynamicTypeWriter />
         <Box pt={5} display={{ md: "flex" }}>
           <Box flewGrow={1}>
             <Heading
