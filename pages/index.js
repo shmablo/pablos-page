@@ -6,6 +6,8 @@ import { Container,
 } from "@chakra-ui/react"
 
 import Layout from "../components/layouts/article"
+import Paragraph from "../components/paragraph"
+import Section from "../components/section"
 
 
 const Page = () => {
@@ -49,6 +51,25 @@ const Page = () => {
             />
           </Box>
         </Box>
+
+        {/* About me Section */}
+        <Section delay={0.1}>
+          <Heading as="h3" variant="section-title" color={"black"}>
+            About Me
+          </Heading>
+          <Paragraph>
+            Hi, I'm Pablo. I'm a junior at Florida International University studying Computer Science. I'm passionate 
+            about software development and always looking for new opportunities to learn and grow. I am currently 
+            looking for internships for the summer of 2025.
+          </Paragraph>
+        </Section>
+
+        {/* Experience Section... i need a job! */}
+        <Section delay={0.2}>
+          <Heading as="h3" variant="section-title" color={"black"}>
+            Experience
+          </Heading>
+        </Section>
       </Container>
     </Layout>
   )

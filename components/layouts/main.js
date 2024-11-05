@@ -11,7 +11,7 @@ const Main = ({ children, router  }) => {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <meta name="description" content="Pablo Ramos' personal website" />
                 <meta name="author" content="Pablo Ramos" />
-                <link rel='icon' href='/stardewShip.jpg' />
+                <link rel='icon' href='/images/stardewShip.jpg' />
                 <title>Pablo Ramos - Homepage</title>
             </Head>
 
