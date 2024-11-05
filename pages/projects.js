@@ -8,6 +8,7 @@ import Section from "../components/section";
 import { WorkGridItem } from "../components/grid-item";
 
 import thumbDeadplant from "../public/images/deadplant.jpg";
+import thumbGG from "../public/images/gg_resized.jpg";
 
 import Layout from "../components/layouts/article";
 
@@ -45,8 +46,19 @@ const Projects = () => {
                             Achieved top 3 First-time hacker @ Shellhacks 2024.
                         </WorkGridItem>
                     </Section>
-                </SimpleGrid>
 
+
+                    <Section delay={0.05}>
+                        <WorkGridItem
+                            href="https://github.com/aulindoraiyan/Gadget-Galaxy"
+                            title="Gadget-Galaxy"
+                            thumbnail={thumbGG}
+                        >
+                            A fully functional online ecommerce website for browsing the latest and greated tech
+                            that allows users to add items to their cart, and checkout.
+                        </WorkGridItem>
+                    </Section>
+                </SimpleGrid>
             </Container>
         </Layout>
     )
