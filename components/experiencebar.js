@@ -18,7 +18,7 @@ const ExperienceBar = () => {
                 <VerticalTimelineElement
                     className='vertical-timeline-element--work'
                     contentStyle={{ background: '#2584b8', color: '#fff' }}
-                    date="May 2024 - August 2024"
+                    date="Sep 2023 - Nov 2023"
                     iconStyle={{
                         background: '#fff',
                         color: '#fff',
