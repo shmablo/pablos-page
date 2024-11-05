@@ -15,6 +15,10 @@ const DynamicTypeWriter = dynamic(() => import("../components/typewriter"), {
   ssr: false,
 })
 
+const DynamicExperienceBar = dynamic(() => import('../components/experiencebar'), {
+    ssr: false
+})
+
 const Page = () => {
   return (
     <Layout>
@@ -75,6 +79,7 @@ const Page = () => {
           <Heading as="h3" variant="section-title" color={"black"}>
             Experience
           </Heading>
+          <DynamicExperienceBar />
         </Section>
       </Container>
     </Layout>
