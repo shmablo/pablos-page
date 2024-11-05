@@ -1,8 +1,9 @@
-import { Container,
-        Box,
-        Heading,
-        Image,
-        SimpleGrid
+import {
+  Container,
+  Box,
+  Heading,
+  Image,
+  SimpleGrid
 } from "@chakra-ui/react"
 import React from "react"
 import dynamic from "next/dynamic"
@@ -16,7 +17,7 @@ const DynamicTypeWriter = dynamic(() => import("../components/typewriter"), {
 })
 
 const DynamicExperienceBar = dynamic(() => import('../components/experiencebar'), {
-    ssr: false
+  ssr: false
 })
 
 const Page = () => {
@@ -41,8 +42,8 @@ const Page = () => {
               Junior at Florida International University studying
               Computer Science.
             </Box>
-        </Box>
-        <Box
+          </Box>
+          <Box
             flexShrink={0}
             mt={{ base: 4, md: 0 }}
             ml={{ md: 6 }}
@@ -51,7 +52,7 @@ const Page = () => {
           >
             <Image
               src={'images/Pablo_headshot.jpg'}
-              borderColor="#5F967C"
+              borderColor="#2584b8"
               borderWidth={2}
               borderStyle="solid"
               borderRadius="full"
@@ -68,8 +69,8 @@ const Page = () => {
             About Me
           </Heading>
           <Paragraph>
-            Hi, I'm Pablo. I'm a junior at Florida International University studying Computer Science. I'm passionate 
-            about software development and always looking for new opportunities to learn and grow. I am currently 
+            Hi, I'm Pablo. I'm a junior at Florida International University studying Computer Science. I'm passionate
+            about software development and always looking for new opportunities to learn and grow. I am currently
             looking for internships for the summer of 2025.
           </Paragraph>
         </Section>
