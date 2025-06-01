@@ -39,8 +39,7 @@ const Page = () => {
               Pablo Ramos
             </Heading>
             <Box color={"black"}>
-              Junior at Florida International University studying
-              Computer Science.
+                Upcoming Computer Science Graduate from Florida International University
             </Box>
           </Box>
           <Box
@@ -69,9 +68,10 @@ const Page = () => {
             About Me
           </Heading>
           <Paragraph>
-            Hi, I'm Pablo. I'm a junior at Florida International University studying Computer Science. I'm passionate
-            about software development and always looking for new opportunities to learn and grow. I am currently
-            looking for internships for the summer of 2025.
+          Hi, I'm Pablo. I'm an upcoming Computer Science graduate from Florida International University, 
+          currently interning at The Walt Disney Company. I'm passionate about software development and 
+          always eager to learn, build, and grow. Outside of coding, I enjoy playing games like 
+          Counter-Strike and Minecraft, playing soccer, going on walks with my dog, and collecting trading cards.
           </Paragraph>
         </Section>
 

@@ -23,7 +23,7 @@ const TypewriterComponent = () => {
         options={{
           strings: [
             "Hi, I'm Pablo Ramos",
-            "I'm a Software Engineer",
+            "I'm a Software Engineer 🧙",
           ],
           autoStart: true,
           loop: true,
