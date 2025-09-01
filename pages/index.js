@@ -8,6 +8,7 @@ import {
 import React from "react"
 import dynamic from "next/dynamic"
 
+
 import Layout from "../components/layouts/article"
 import Paragraph from "../components/paragraph"
 import Section from "../components/section"
@@ -23,7 +24,7 @@ const DynamicExperienceBar = dynamic(() => import('../components/experiencebar')
 const Page = () => {
   return (
     <Layout>
-      <Container bg="white" paddingTop="15px">
+      <Container bg="" paddingTop="15px">
         <DynamicTypeWriter />
         <Box pt={5} display={{ md: "flex" }}>
           <Box flewGrow={1}>
@@ -39,7 +40,7 @@ const Page = () => {
               Pablo Ramos
             </Heading>
             <Box color={"black"}>
-                Upcoming Computer Science Graduate from Florida International University
+                Computer Science Graduate from Florida International University
             </Box>
           </Box>
           <Box
@@ -52,11 +53,10 @@ const Page = () => {
             <Image
               src={'images/Pablo_headshot.jpg'}
               borderColor="#2584b8"
-              borderWidth={2}
-              borderStyle="solid"
-              borderRadius="full"
-              maxWidth="119px"
-              display="inline-block"
+              borderStyle='solid'
+              boxSize='150px'
+              borderRadius='full'
+              fit='cover'
               alt={'Pablo Ramos'}
             />
           </Box>
@@ -68,10 +68,9 @@ const Page = () => {
             About Me
           </Heading>
           <Paragraph>
-          Hi, I'm Pablo. I'm an upcoming Computer Science graduate from Florida International University, 
-          currently interning at The Walt Disney Company. I'm passionate about software development and 
-          always eager to learn, build, and grow. Outside of coding, I enjoy playing games like 
-          Counter-Strike and Minecraft, playing soccer, going on walks with my dog, and collecting trading cards.
+          Hi, I'm Pablo. I’m a Computer Science graduate from Florida International University and currently a Software Engineering
+          Intern at The Walt Disney Company. I’m passionate about building impactful software and always eager to learn and grow.
+          Outside of coding, I enjoy playing Counter-Strike and Minecraft, soccer, walking my dog, and collecting trading cards.
           </Paragraph>
         </Section>
 

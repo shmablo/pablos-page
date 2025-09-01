@@ -2,22 +2,8 @@ import NextLink from 'next/link';
 import {
     Container,
     Box,
-    Link,
     Stack,
-    Heading,
-    Flex,
-    Menu,
-    MenuItem,
-    MenuList,
-    MenuButton,
-    IconButton,
-    HStack,
-    Text,
-    Image,
-    useColorModeValue,
 } from '@chakra-ui/react';
-//Not an actual Hamburger...
-// import { HamburgerIcon } from '@chakra-ui/icons';
 import Logo from './logo';
 // import { Slant as Hamburger } from 'hamburger-react';
 import React, { useState } from 'react';
