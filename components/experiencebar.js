@@ -39,13 +39,13 @@ const ExperienceBar = () => {
                  }
                 >
                 <Heading as="h3" size="md" mb={2}>
-                  Disney
+                  The Walt Disney Company
                 </Heading>
                 <Heading as={'h4'} size={'sm'} mb={2}>
                   Software Engineering Intern
                 </Heading>
                 <Text>
-                    Developing full-stack applications for Disney’s Telecommunications team and call agents at Disney Central
+                    Developing full-stack applications for Disney’s Telecommunications team and call agents at Disney Central, and eating a lot of mickey bars.
                 </Text>
                 </VerticalTimelineElement>
 
